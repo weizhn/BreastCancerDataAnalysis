@@ -8,6 +8,6 @@ infercnv.r – Infers copy number variations (CNVs) from scRNA‑seq counts usin
 
 RCTD.r – Deconvolves spatial transcriptomics spots using RCTD, assigning cell types based on a single‑cell reference and saving normalized weights.
 
-stereoseq_ambiguous_definition.py – Excludes ambiguously classified cells from Stereo‑seq spatial data by integrating RCTD deconvolution results with stereopy spatial clustering, retaining only confidently assigned cell types.
+stereoseq_ambiguous_definition.py – To mitigate the influence of spatial transcriptomic mixing effects caused by limited resolution and data variation, we classified cells lacking sufficient local neighborhood consensus as ‘mixed’. These cells were excluded from downstream cell-type-specific analyses to ensure the robustness of our spatial annotations.
 
 cellchat.r – Constructs and analyses cell‑cell communication networks via CellChat across different sample groups, identifying significant ligand‑receptor pathways and interaction patterns.
