@@ -11,3 +11,5 @@ RCTD.r – Deconvolves spatial transcriptomics spots using RCTD, assigning cell 
 stereoseq_ambiguous_definition.py – To mitigate the influence of spatial transcriptomic mixing effects caused by limited resolution and data variation, we classified cells lacking sufficient local neighborhood consensus as ‘mixed’. These cells were excluded from downstream cell-type-specific analyses to ensure the robustness of our spatial annotations.
 
 cellchat.r – Constructs and analyses cell‑cell communication networks via CellChat across different sample groups, identifying significant ligand‑receptor pathways and interaction patterns.
+
+phenoptr.py – The nearest neighbor distance from spatial transcriptome spots to epithelial cells was calculated using phenoptr package, and the distance statistics were summarized according to cell type. The specificity of fib2 cells was compared, and the visualization results such as distance distribution, histogram and scatter trend graph were generated.
